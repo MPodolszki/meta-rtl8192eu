@@ -1,0 +1,21 @@
+[Unit]
+Description=Wifi Start Service
+BindsTo=sys-subsystem-net-devices-wlan0.device
+After=sys-subsystem-net-devices-wlan0.device
+
+
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+
+
+
+ExecStart=/usr/sbin/wpa_supplicant -Dnl80211 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0 &
+
+
+
+
+[Install]
+WantedBy=multi-user.target
+
