@@ -43,7 +43,7 @@ add your desired wlan-ID and passkey:
   	      ssid="MYSSID"
 	      psk="MY-SECURE-PASSKEY"
 	      proto=RSN
-    	      key_mgmt=WPA-PSK
+	      key_mgmt=WPA-PSK
               }
 		      
 1.4 sometimes before bitbake you got to source the sources with:
