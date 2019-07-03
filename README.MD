@@ -6,12 +6,12 @@ Edit this file with the needed SSID and KEY
 
 /etc/wpa_supplicant/wpa_supplicant-wlan0.conf:
 
-country=DE
-network={
-    ssid="SSID"
-    proto=WPA2
-    psk="KEY"
-}
+	country=DE
+	network={
+    		ssid="SSID"
+    		proto=WPA2
+    		psk="KEY"
+	}
 
 Now a connection can be established with a reboot, or:
 target$ wpa_supplicant -Dnl80211 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0 &
