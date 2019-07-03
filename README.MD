@@ -14,7 +14,8 @@ Edit this file with the needed SSID and KEY
 	}
 
 Now a connection can be established with a reboot, or:
-target$ wpa_supplicant -Dnl80211 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0 &
+
+	target$ wpa_supplicant -Dnl80211 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0 &
 
 2. How to add the 8192eu based Wifi-USB-Stick into a fresh Yocto BSP:
 
@@ -26,16 +27,19 @@ To build your own BSP choose a directory: (mkdir example) (cd example)
 	./phyLinux init
 	. sources/poky/oe-init-build-env
 choose a image to build (here for eg. Phytec-headless-image):
+
 	bitbake phytec-headless-image
 
 In a fresh BSP: 
 
-2.1 copy the /meta-rtl8192eu tree (from USB-Stick/Source/ to:
-              /sources/
+2.1 go to:
 
+              /sources/
+	      git clone https://github.com/MPodolszki/8192eu_wega.git 
 
 	
 2.2 go to:
+	
 	/build/conf$  
 	vi bblayers.conf
 
