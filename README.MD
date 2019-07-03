@@ -1,3 +1,7 @@
+Tested with USB-Device EDUP EP-N1557 (equals to WISETIGER EP-N1557) (ID 0bda:818b Realtek Semiconductor Corp. RTL8192EU 802.11b/g/n WLAN Adapter)
+on Phytec BSP-Yocto-AM335x-PD19.1.1 with machine:
+phyboard-wega-am335x-2 (PHYTEC phyBOARD-WEGA AM335x 256MiB RAM, 128MiB NAND flash, PEB-AV-02)
+
 1. How to add the 8192eu based Wifi-USB-Stick into a fresh Yocto BSP:
 
 
