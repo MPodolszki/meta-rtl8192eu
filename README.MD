@@ -2,15 +2,18 @@
 1. How to change the Wireless Network Configuration on the running Board
       
 
-    • Edit this file with the needed SSID and KEY
-      /etc/wpa_supplicant/wpa_supplicant-wlan0.conf:
+Edit this file with the needed SSID and KEY
+
+/etc/wpa_supplicant/wpa_supplicant-wlan0.conf:
+
 country=DE
 network={
     ssid="SSID"
     proto=WPA2
     psk="KEY"
 }
-    • Now a connection can be established with a reboot, or:
+
+Now a connection can be established with a reboot, or:
 target$ wpa_supplicant -Dnl80211 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0 &
 
 2. How to add the 8192eu based Wifi-USB-Stick into a fresh Yocto BSP:
